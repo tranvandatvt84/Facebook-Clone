@@ -10,7 +10,7 @@
 <body>
     <nav>
         <div class="nav-left">
-            <img src="images/logo.png" class="logo">
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>  
             <ul>
                 <li><img src="images/notification.png"></li>
                 <li><img src="images/inbox.png"></li>
@@ -22,18 +22,23 @@
                 <img src="images/search.png" alt="">
                 <input type="text" placeholder="Search">
             </div>
-            <div class="nav-user-icon online">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                 <img src="images/profile-pic.png">
             </div>
         </div>
         <!-- Settings-menu -->
         <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
             <div class="settings-menu-inner">
                 <div class="user-profile">
                     <img src="images/profile-pic.png">
                     <div>
                         <p>John Nicholas</p>
-                        <a href="#">See your profile</a>
+                        <a href="profile.html">See your profile</a>
                     </div>
                 </div>
                 <hr>
@@ -252,5 +257,6 @@
 <div class="footer">
     <p>Copyright 2023 - Home Coming</p>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
